@@ -1,0 +1,108 @@
+@font-face {
+    font-family: framework7 icons;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://udid.su/fonts/Framework7Icons-Regular.eot);
+    src: url(https://udid.su/fonts/Framework7Icons-Regular.woff2) format("woff2"),url(https://udid.su/fonts/Framework7Icons-Regular.woff) format("woff"),url(https://udid.su/fonts/Framework7Icons-Regular.ttf) format("truetype")
+}
+
+.f7-icons {
+    font-family: framework7 icons;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-feature-settings: "liga";
+    -moz-font-feature-settings: "liga=1";
+    -moz-font-feature-settings: "liga";
+    font-feature-settings: "liga";
+    text-align: center
+}
+
+.f7-icons.normal {
+    font-size: 28px;
+}
+
+.ios .toggle-icon.dark-mode:after {
+    height: calc(var(--f7-toggle-height) - 4px);
+    width: calc(var(--f7-toggle-height) - 4px);
+    top: 2px;
+    left: 2px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.3);
+    border-radius: calc(var(--f7-toggle-height) - 4px);
+    background: url(https://appscloud.me/images/moon-color-icon.png) center center / cover;
+}
+
+.demo-popup-swipe-handler {
+    --f7-popup-border-radius: 15px 15px 0 0;
+    --f7-popup-tablet-border-radius: 15px;
+    --f7-block-strong-border-color: transparent;
+    height: calc(100% - var(--f7-navbar-height) - var(--f7-safe-area-top));
+    top: calc(var(--f7-navbar-height) + var(--f7-safe-area-top));
+}
+
+.theme-dark .demo-popup-swipe-handler .page{
+    background: #1d1d1d;
+}
+
+.demo-popup-swipe-handler .swipe-handler {
+    background: var(--f7-page-bg-color);
+}
+.theme-dark .demo-popup-swipe-handler .swipe-handler {
+    background: #1d1d1d;
+}
+
+.demo-popup-swipe-handler .page-content {
+    padding-top: 26px
+}
+
+.demo-sheet-swipe-to-close,.demo-sheet-swipe-to-step {
+    --f7-sheet-border-color: transparent;border-radius: 15px 15px 0 0;
+    overflow: hidden
+}
+
+.demo-sheet-swipe-to-close .swipe-handler,.demo-sheet-swipe-to-step .swipe-handler {
+    background: 0 0
+}
+
+.swipe-handler {
+    height: 26px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 0;
+    background: #fff;
+    cursor: pointer;
+    z-index: 10
+}
+
+.swipe-handler:after {
+    content: '';
+    width: 36px;
+    height: 6px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -18px;
+    margin-top: -3px;
+    border-radius: 3px;
+    background: #666
+}
+
+.ios.theme-dark .block-smooth {
+	background: #000;
+}
+
+.page-home,.page-about {
+    --f7-list-border-color: transparent;--f7-block-strong-border-color: transparent;--f7-block-font-size: 16px}
+
+:root:not(.theme-dark) .page-home,:root:not(.theme-dark) .page-about {
+    --f7-page-bg-color: #fff}
